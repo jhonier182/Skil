@@ -1,0 +1,367 @@
+2024-12-29T17:34:03.151-05:00  INFO 7424 --- [main] com.Skill_Master.Skil.SkilApplication    : Starting SkilApplication using Java 17.0.11 with PID 7424 (C:\Users\JHONIER ARIAS\Pictures\Skil\target\classes started by JHONIER ARIAS in C:\Users\JHONIER ARIAS\Pictures\Skil)
+2024-12-29T17:34:03.155-05:00  INFO 7424 --- [main] com.Skill_Master.Skil.SkilApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:34:04.711-05:00  INFO 7424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:34:04.817-05:00  INFO 7424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
+2024-12-29T17:34:05.771-05:00  INFO 7424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-29T17:34:05.793-05:00  INFO 7424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-29T17:34:05.794-05:00  INFO 7424 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29T17:34:05.929-05:00  INFO 7424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-29T17:34:05.930-05:00  INFO 7424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2672 ms
+2024-12-29T17:34:06.149-05:00  INFO 7424 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:34:06.284-05:00  INFO 7424 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T17:34:06.340-05:00  INFO 7424 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T17:34:06.909-05:00  INFO 7424 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:34:06.974-05:00  INFO 7424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T17:34:07.279-05:00  INFO 7424 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43c0c13a
+2024-12-29T17:34:07.284-05:00  INFO 7424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T17:34:07.339-05:00  WARN 7424 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'where clause'
+2024-12-29T17:34:07.366-05:00  WARN 7424 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:34:07.369-05:00  WARN 7424 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-29T17:34:07.394-05:00  INFO 7424 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-29T17:34:08.902-05:00  INFO 7424 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:34:10.503-05:00  INFO 7424 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:34:10.574-05:00  WARN 7424 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-29T17:34:11.435-05:00  INFO 7424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-29T17:34:11.451-05:00  INFO 7424 --- [main] com.Skill_Master.Skil.SkilApplication    : Started SkilApplication in 9.15 seconds (process running for 10.292)
+2024-12-29T17:34:41.536-05:00  INFO 7424 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29T17:34:41.589-05:00  INFO 7424 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-29T17:34:41.593-05:00  INFO 7424 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:34:41.596-05:00  INFO 7424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-29T17:34:41.619-05:00  INFO 7424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-29T17:35:19.599-05:00  INFO 10144 --- [main] com.Skill_Master.Skil.SkilApplication    : Starting SkilApplication using Java 17.0.11 with PID 10144 (C:\Users\JHONIER ARIAS\Pictures\Skil\target\classes started by JHONIER ARIAS in C:\Users\JHONIER ARIAS\Pictures\Skil)
+2024-12-29T17:35:19.601-05:00  INFO 10144 --- [main] com.Skill_Master.Skil.SkilApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:35:20.996-05:00  INFO 10144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:35:21.088-05:00  INFO 10144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interface.
+2024-12-29T17:35:21.859-05:00  INFO 10144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-29T17:35:21.879-05:00  INFO 10144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-29T17:35:21.880-05:00  INFO 10144 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29T17:35:22.011-05:00  INFO 10144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-29T17:35:22.012-05:00  INFO 10144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2057 ms
+2024-12-29T17:35:22.276-05:00  INFO 10144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:35:22.395-05:00  INFO 10144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T17:35:22.445-05:00  INFO 10144 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T17:35:22.977-05:00  INFO 10144 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:35:23.033-05:00  INFO 10144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T17:35:23.314-05:00  INFO 10144 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f8659d0
+2024-12-29T17:35:23.317-05:00  INFO 10144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T17:35:23.368-05:00  WARN 10144 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'where clause'
+2024-12-29T17:35:23.392-05:00  WARN 10144 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:35:23.394-05:00  WARN 10144 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-29T17:35:23.414-05:00  INFO 10144 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-29T17:35:25.211-05:00  INFO 10144 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:35:26.491-05:00  INFO 10144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:35:26.551-05:00  WARN 10144 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-29T17:35:27.398-05:00  INFO 10144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-29T17:35:27.410-05:00  INFO 10144 --- [main] com.Skill_Master.Skil.SkilApplication    : Started SkilApplication in 8.61 seconds (process running for 9.855)
+2024-12-29T17:35:44.786-05:00  INFO 10144 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29T17:35:44.862-05:00  INFO 10144 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-29T17:35:44.869-05:00  INFO 10144 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:35:44.872-05:00  INFO 10144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-29T17:35:44.885-05:00  INFO 10144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-29T17:36:23.647-05:00  INFO 11236 --- [main] com.Skill_Master.Skil.SkilApplication    : Starting SkilApplication using Java 17.0.11 with PID 11236 (C:\Users\JHONIER ARIAS\Pictures\Skil\target\classes started by JHONIER ARIAS in C:\Users\JHONIER ARIAS\Pictures\Skil)
+2024-12-29T17:36:23.656-05:00  INFO 11236 --- [main] com.Skill_Master.Skil.SkilApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:36:25.216-05:00  INFO 11236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:36:25.380-05:00  INFO 11236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.
+2024-12-29T17:36:26.446-05:00  INFO 11236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-29T17:36:26.477-05:00  INFO 11236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-29T17:36:26.478-05:00  INFO 11236 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29T17:36:26.593-05:00  INFO 11236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-29T17:36:26.593-05:00  INFO 11236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2803 ms
+2024-12-29T17:36:26.930-05:00  INFO 11236 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:36:27.057-05:00  INFO 11236 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T17:36:27.133-05:00  INFO 11236 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T17:36:27.822-05:00  INFO 11236 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:36:27.891-05:00  INFO 11236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T17:36:28.717-05:00  INFO 11236 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d3d76b4
+2024-12-29T17:36:28.721-05:00  INFO 11236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T17:36:28.781-05:00  WARN 11236 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'where clause'
+2024-12-29T17:36:28.823-05:00  WARN 11236 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:36:28.825-05:00  WARN 11236 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-29T17:36:28.862-05:00  INFO 11236 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-29T17:36:31.742-05:00  INFO 11236 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:36:34.186-05:00  INFO 11236 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:36:34.301-05:00  WARN 11236 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-29T17:36:35.519-05:00  INFO 11236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-29T17:36:35.531-05:00  INFO 11236 --- [main] com.Skill_Master.Skil.SkilApplication    : Started SkilApplication in 12.937 seconds (process running for 13.91)
+2024-12-29T17:37:18.742-05:00  INFO 11236 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29T17:37:18.829-05:00  INFO 11236 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-29T17:37:18.841-05:00  INFO 11236 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:37:18.845-05:00  INFO 11236 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-29T17:37:18.875-05:00  INFO 11236 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-29T17:38:29.836-05:00  INFO 10756 --- [main] com.Skill_Master.Skil.SkilApplication    : Starting SkilApplication using Java 17.0.11 with PID 10756 (C:\Users\JHONIER ARIAS\Pictures\Skil\target\classes started by JHONIER ARIAS in C:\Users\JHONIER ARIAS\Pictures\Skil)
+2024-12-29T17:38:29.840-05:00  INFO 10756 --- [main] com.Skill_Master.Skil.SkilApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:38:31.351-05:00  INFO 10756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:38:31.518-05:00  INFO 10756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interface.
+2024-12-29T17:38:32.415-05:00  INFO 10756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-29T17:38:32.443-05:00  INFO 10756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-29T17:38:32.444-05:00  INFO 10756 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29T17:38:32.566-05:00  INFO 10756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-29T17:38:32.566-05:00  INFO 10756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2631 ms
+2024-12-29T17:38:32.820-05:00  INFO 10756 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:38:32.933-05:00  INFO 10756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T17:38:33.022-05:00  INFO 10756 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T17:38:33.586-05:00  INFO 10756 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:38:33.656-05:00  INFO 10756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T17:38:33.973-05:00  INFO 10756 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cd5ff55
+2024-12-29T17:38:33.976-05:00  INFO 10756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T17:38:34.031-05:00  WARN 10756 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'where clause'
+2024-12-29T17:38:34.066-05:00  WARN 10756 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:38:34.073-05:00  WARN 10756 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-29T17:38:34.101-05:00  INFO 10756 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-29T17:38:36.636-05:00  INFO 10756 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:38:39.268-05:00  INFO 10756 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:38:39.320-05:00  WARN 10756 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-29T17:38:40.349-05:00  INFO 10756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-29T17:38:40.363-05:00  INFO 10756 --- [main] com.Skill_Master.Skil.SkilApplication    : Started SkilApplication in 11.425 seconds (process running for 12.973)
+2024-12-29T17:39:13.303-05:00  INFO 10756 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29T17:39:13.365-05:00  INFO 10756 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-29T17:39:13.372-05:00  INFO 10756 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:39:13.386-05:00  INFO 10756 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-29T17:39:13.399-05:00  INFO 10756 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-29T17:39:17.848-05:00  INFO 11416 --- [main] com.Skill_Master.Skil.SkilApplication    : Starting SkilApplication using Java 17.0.11 with PID 11416 (C:\Users\JHONIER ARIAS\Pictures\Skil\target\classes started by JHONIER ARIAS in C:\Users\JHONIER ARIAS\Pictures\Skil)
+2024-12-29T17:39:17.851-05:00  INFO 11416 --- [main] com.Skill_Master.Skil.SkilApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:39:18.942-05:00  INFO 11416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:39:19.049-05:00  INFO 11416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interface.
+2024-12-29T17:39:19.906-05:00  INFO 11416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-29T17:39:19.926-05:00  INFO 11416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-29T17:39:19.926-05:00  INFO 11416 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29T17:39:20.041-05:00  INFO 11416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-29T17:39:20.042-05:00  INFO 11416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2084 ms
+2024-12-29T17:39:20.288-05:00  INFO 11416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:39:20.401-05:00  INFO 11416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T17:39:20.466-05:00  INFO 11416 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T17:39:21.021-05:00  INFO 11416 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:39:21.090-05:00  INFO 11416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T17:39:21.344-05:00  INFO 11416 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9e62fb
+2024-12-29T17:39:21.347-05:00  INFO 11416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T17:39:21.410-05:00  WARN 11416 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'where clause'
+2024-12-29T17:39:21.452-05:00  WARN 11416 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:39:21.454-05:00  WARN 11416 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-29T17:39:21.482-05:00  INFO 11416 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-29T17:39:22.758-05:00  INFO 11416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:39:22.856-05:00  INFO 11416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:39:22.908-05:00  WARN 11416 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-29T17:39:23.751-05:00  INFO 11416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-29T17:39:23.764-05:00  INFO 11416 --- [main] com.Skill_Master.Skil.SkilApplication    : Started SkilApplication in 6.704 seconds (process running for 7.661)
+2024-12-29T17:39:37.771-05:00  INFO 11416 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29T17:39:37.871-05:00  INFO 11416 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-29T17:39:37.877-05:00  INFO 11416 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:39:37.879-05:00  INFO 11416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-29T17:39:37.890-05:00  INFO 11416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-29T17:40:05.138-05:00  INFO 984 --- [main] com.Skill_Master.Skil.SkilApplication    : Starting SkilApplication using Java 17.0.11 with PID 984 (C:\Users\JHONIER ARIAS\Pictures\Skil\target\classes started by JHONIER ARIAS in C:\Users\JHONIER ARIAS\Pictures\Skil)
+2024-12-29T17:40:05.141-05:00  INFO 984 --- [main] com.Skill_Master.Skil.SkilApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:40:06.201-05:00  INFO 984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:40:06.334-05:00  INFO 984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interface.
+2024-12-29T17:40:07.475-05:00  INFO 984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-29T17:40:07.503-05:00  INFO 984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-29T17:40:07.504-05:00  INFO 984 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29T17:40:07.610-05:00  INFO 984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-29T17:40:07.611-05:00  INFO 984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2381 ms
+2024-12-29T17:40:07.869-05:00  INFO 984 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:40:07.971-05:00  INFO 984 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T17:40:08.064-05:00  INFO 984 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T17:40:08.573-05:00  INFO 984 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:40:08.625-05:00  INFO 984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T17:40:08.867-05:00  INFO 984 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@731db93f
+2024-12-29T17:40:08.870-05:00  INFO 984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T17:40:08.993-05:00  WARN 984 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'where clause'
+2024-12-29T17:40:09.023-05:00  WARN 984 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:40:09.025-05:00  WARN 984 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-29T17:40:09.169-05:00  INFO 984 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-29T17:40:10.686-05:00  INFO 984 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:40:12.589-05:00  INFO 984 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:40:12.668-05:00  WARN 984 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-29T17:40:13.519-05:00  INFO 984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-29T17:40:13.533-05:00  INFO 984 --- [main] com.Skill_Master.Skil.SkilApplication    : Started SkilApplication in 9.191 seconds (process running for 10.113)
+2024-12-29T17:41:33.180-05:00  INFO 984 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29T17:41:33.241-05:00  INFO 984 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-29T17:41:33.245-05:00  INFO 984 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:41:33.248-05:00  INFO 984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-29T17:41:33.259-05:00  INFO 984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-29T17:42:15.893-05:00  INFO 436 --- [main] com.Skill_Master.Skil.SkilApplication    : Starting SkilApplication using Java 17.0.11 with PID 436 (C:\Users\JHONIER ARIAS\Pictures\Skil\target\classes started by JHONIER ARIAS in C:\Users\JHONIER ARIAS\Pictures\Skil)
+2024-12-29T17:42:15.898-05:00  INFO 436 --- [main] com.Skill_Master.Skil.SkilApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:42:17.001-05:00  INFO 436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:42:17.108-05:00  INFO 436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
+2024-12-29T17:42:17.930-05:00  INFO 436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-29T17:42:17.950-05:00  INFO 436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-29T17:42:17.951-05:00  INFO 436 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29T17:42:18.046-05:00  INFO 436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-29T17:42:18.047-05:00  INFO 436 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2075 ms
+2024-12-29T17:42:18.274-05:00  INFO 436 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:42:18.389-05:00  INFO 436 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T17:42:18.442-05:00  INFO 436 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T17:42:18.881-05:00  INFO 436 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:42:18.934-05:00  INFO 436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T17:42:19.184-05:00  INFO 436 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42cc5460
+2024-12-29T17:42:19.187-05:00  INFO 436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T17:42:19.244-05:00  WARN 436 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'where clause'
+2024-12-29T17:42:19.287-05:00  WARN 436 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:42:19.289-05:00  WARN 436 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-29T17:42:19.307-05:00  INFO 436 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-29T17:42:20.883-05:00  INFO 436 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:42:22.291-05:00  INFO 436 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:42:22.356-05:00  WARN 436 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-29T17:42:23.271-05:00  INFO 436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-29T17:42:23.290-05:00  INFO 436 --- [main] com.Skill_Master.Skil.SkilApplication    : Started SkilApplication in 8.162 seconds (process running for 9.19)
+2024-12-29T17:44:11.344-05:00  INFO 436 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29T17:44:11.409-05:00  INFO 436 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-29T17:44:11.412-05:00  INFO 436 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:44:11.415-05:00  INFO 436 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-29T17:44:11.425-05:00  INFO 436 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-29T17:44:15.903-05:00  INFO 11952 --- [main] com.Skill_Master.Skil.SkilApplication    : Starting SkilApplication using Java 17.0.11 with PID 11952 (C:\Users\JHONIER ARIAS\Pictures\Skil\target\classes started by JHONIER ARIAS in C:\Users\JHONIER ARIAS\Pictures\Skil)
+2024-12-29T17:44:15.922-05:00  INFO 11952 --- [main] com.Skill_Master.Skil.SkilApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:44:17.062-05:00  INFO 11952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:44:17.164-05:00  INFO 11952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
+2024-12-29T17:44:18.143-05:00  INFO 11952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-29T17:44:18.163-05:00  INFO 11952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-29T17:44:18.163-05:00  INFO 11952 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29T17:44:18.268-05:00  INFO 11952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-29T17:44:18.268-05:00  INFO 11952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2225 ms
+2024-12-29T17:44:18.491-05:00  INFO 11952 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:44:18.598-05:00  INFO 11952 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T17:44:18.655-05:00  INFO 11952 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T17:44:19.167-05:00  INFO 11952 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:44:19.227-05:00  INFO 11952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T17:44:19.473-05:00  INFO 11952 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@602298b
+2024-12-29T17:44:19.476-05:00  INFO 11952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T17:44:19.546-05:00  WARN 11952 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'where clause'
+2024-12-29T17:44:19.573-05:00  WARN 11952 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:44:19.575-05:00  WARN 11952 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-29T17:44:19.593-05:00  INFO 11952 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-29T17:44:20.908-05:00  INFO 11952 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:44:22.093-05:00  INFO 11952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:44:22.951-05:00  INFO 11952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-29T17:44:22.966-05:00  INFO 11952 --- [main] com.Skill_Master.Skil.SkilApplication    : Started SkilApplication in 7.898 seconds (process running for 9.138)
+2024-12-29T17:44:28.053-05:00  INFO 11952 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29T17:44:28.132-05:00  INFO 11952 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-29T17:44:28.137-05:00  INFO 11952 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:44:28.143-05:00  INFO 11952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-29T17:44:28.156-05:00  INFO 11952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-29T17:45:05.573-05:00  INFO 9952 --- [main] com.Skill_Master.Skil.SkilApplication    : Starting SkilApplication using Java 17.0.11 with PID 9952 (C:\Users\JHONIER ARIAS\Pictures\Skil\target\classes started by JHONIER ARIAS in C:\Users\JHONIER ARIAS\Pictures\Skil)
+2024-12-29T17:45:05.575-05:00  INFO 9952 --- [main] com.Skill_Master.Skil.SkilApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:45:06.645-05:00  INFO 9952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:45:06.726-05:00  INFO 9952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-12-29T17:45:07.531-05:00  INFO 9952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-29T17:45:07.569-05:00  INFO 9952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-29T17:45:07.570-05:00  INFO 9952 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29T17:45:07.886-05:00  INFO 9952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-29T17:45:07.887-05:00  INFO 9952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2217 ms
+2024-12-29T17:45:08.148-05:00  INFO 9952 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:45:08.271-05:00  INFO 9952 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T17:45:08.330-05:00  INFO 9952 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T17:45:08.939-05:00  INFO 9952 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:45:09.001-05:00  INFO 9952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T17:45:09.305-05:00  INFO 9952 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5896cb9c
+2024-12-29T17:45:09.308-05:00  INFO 9952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T17:45:09.366-05:00  WARN 9952 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'where clause'
+2024-12-29T17:45:09.397-05:00  WARN 9952 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:45:09.400-05:00  WARN 9952 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-29T17:45:09.420-05:00  INFO 9952 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-29T17:45:11.059-05:00  INFO 9952 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:45:12.344-05:00  INFO 9952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:45:13.254-05:00  INFO 9952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-29T17:45:13.267-05:00  INFO 9952 --- [main] com.Skill_Master.Skil.SkilApplication    : Started SkilApplication in 8.497 seconds (process running for 9.588)
+2024-12-29T17:47:40.508-05:00  INFO 9952 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29T17:47:40.570-05:00  INFO 9952 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-29T17:47:40.576-05:00  INFO 9952 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:47:40.578-05:00  INFO 9952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-29T17:47:40.601-05:00  INFO 9952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-29T17:47:44.783-05:00  INFO 2200 --- [main] com.Skill_Master.Skil.SkilApplication    : Starting SkilApplication using Java 17.0.11 with PID 2200 (C:\Users\JHONIER ARIAS\Pictures\Skil\target\classes started by JHONIER ARIAS in C:\Users\JHONIER ARIAS\Pictures\Skil)
+2024-12-29T17:47:44.786-05:00  INFO 2200 --- [main] com.Skill_Master.Skil.SkilApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:47:45.860-05:00  INFO 2200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:47:45.965-05:00  INFO 2200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2024-12-29T17:47:46.892-05:00  INFO 2200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-29T17:47:46.926-05:00  INFO 2200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-29T17:47:46.926-05:00  INFO 2200 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-29T17:47:47.027-05:00  INFO 2200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-29T17:47:47.028-05:00  INFO 2200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2154 ms
+2024-12-29T17:47:47.293-05:00  INFO 2200 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:47:47.417-05:00  INFO 2200 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T17:47:47.507-05:00  INFO 2200 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T17:47:47.951-05:00  INFO 2200 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:47:48.009-05:00  INFO 2200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T17:47:48.374-05:00  INFO 2200 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f986501
+2024-12-29T17:47:48.377-05:00  INFO 2200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T17:47:48.450-05:00  WARN 2200 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'where clause'
+2024-12-29T17:47:48.474-05:00  WARN 2200 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:47:48.476-05:00  WARN 2200 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-29T17:47:48.494-05:00  INFO 2200 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-29T17:47:49.841-05:00  INFO 2200 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:47:51.318-05:00  INFO 2200 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:47:52.119-05:00  INFO 2200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-29T17:47:52.132-05:00  INFO 2200 --- [main] com.Skill_Master.Skil.SkilApplication    : Started SkilApplication in 8.072 seconds (process running for 9.226)
+2024-12-29T17:49:30.094-05:00  INFO 2200 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29T17:49:30.148-05:00  INFO 2200 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-29T17:49:30.153-05:00  INFO 2200 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:49:30.163-05:00  INFO 2200 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-29T17:49:30.182-05:00  INFO 2200 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
