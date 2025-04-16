@@ -1,12 +1,11 @@
 package com.Skill_Master.Skil.service.user;
 
-import com.Skill_Master.Skil.Enums.UserRole;
-import com.Skill_Master.Skil.entities.Estado;
 import com.Skill_Master.Skil.entities.User;
-import com.Skill_Master.Skil.resposiroty.EstadoRepository;
-import com.Skill_Master.Skil.resposiroty.UserRepository;
+import com.Skill_Master.Skil.model.UserRole;
+import com.Skill_Master.Skil.repository.UserRepository;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,115 +16,110 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-
     @Autowired
-    private EstadoRepository estadoRepository;
+    private PasswordEncoder passwordEncoder;
 
-
-    // Crear usuario administrador al iniciar la aplicación (si no existe)
     @PostConstruct
     public void createAdminUser() {
-        User admin = userRepository.findByRole(UserRole.ADMIN);
-        if (admin == null) {
+        List<User> admins = userRepository.findByRol(UserRole.ADMIN);
+        if (admins.isEmpty()) {
             User user = new User();
-            user.setName("Admin");
-            user.setEmail("admin@gmail.com");
-            user.setPassword("admin");
-            user.setRole(UserRole.ADMIN);
-            userRepository.save(user);
+            user.setNombre("Admin");
+            user.setApellido("Administrator");
+            user.setCorreo("admin@skillmaster.com");
+            user.setContraseña(passwordEncoder.encode("admin"));
+            user.setRol(UserRole.ADMIN);
+            user.setEstado(1L); // Estado activo
+            
+            try {
+                userRepository.save(user);
+                System.out.println("Usuario administrador creado correctamente.");
+            } catch (Exception e) {
+                System.err.println("Error al crear el usuario administrador: " + e.getMessage());
+                e.printStackTrace();
+            }
         }
     }
 
-    // Validar si un correo ya existe en el sistema
-    public boolean hasUserFirtstEmail(String email) {
-        return userRepository.findFirtstByEmail(email) != null;
-    }
-
-    // Crear usuarios
     @Override
     public User createUser(User user) {
-        if (user.getRole() == null) {
-            user.setRole(UserRole.APRENDIZ); // Rol predeterminado: APRENDIZ
+        if (user.getRol() == null) {
+            user.setRol(UserRole.APRENDIZ);
         }
+        if (user.getEstado() == null) {
+            user.setEstado(1L); // Estado activo por defecto
+        }
+        user.setContraseña(passwordEncoder.encode(user.getContraseña()));
         return userRepository.save(user);
     }
 
-    // Traer todos los usuarios
     @Override
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
-    // Login de usuario
     @Override
     public User login(User user) {
-        Optional<User> optionalUser = userRepository.findByEmail(user.getEmail());
-        if (optionalUser.isPresent() && user.getPassword().equals(optionalUser.get().getPassword())) {
+        Optional<User> optionalUser = userRepository.findByCorreo(user.getCorreo());
+        if (optionalUser.isPresent() && passwordEncoder.matches(user.getContraseña(), optionalUser.get().getContraseña())) {
             return optionalUser.get();
         }
         return null;
     }
 
-    // Eliminar usuario
     @Override
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
     }
 
-    // Buscar usuarios por ficha
     @Override
     public List<User> findByFicha(Long ficha) {
         return userRepository.findByFicha(ficha);
     }
 
-
-
-
-    // Cambiar el estado de un usuario
-    public void cambiarEstado(Long userId, String estadoDescripcion) {
-        // Buscar el usuario por ID
-        User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
-
-        // Buscar el estado correspondiente
-        Estado estado = estadoRepository.findByDescripcion(estadoDescripcion);
-        if (estado == null) {
-            throw new RuntimeException("Estado no válido");
-        }
-
-        // Asignar el nuevo estado al usuario
-        user.setEstado(estado);
-
-        // Guardar el usuario con el nuevo estado
-        userRepository.save(user);
+    @Override
+    public Optional<User> getUserById(Long id) {
+        return userRepository.findById(id);
     }
 
+    @Override
+    public List<User> getUsersByRole(UserRole role) {
+        return userRepository.findByRol(role);
+    }
 
-    // Cambiar a estado activo
+    @Override
+    public List<User> getUsersByFicha(Long fichaId) {
+        return userRepository.findByFicha(fichaId);
+    }
+
+    @Override
+    public User updateUser(Long id, User user) {
+        user.setId(id);
+        return userRepository.save(user);
+    }
+
+    @Override
+    public boolean hasUserFirtstEmail(String email) {
+        return userRepository.existsByCorreo(email);
+    }
+
+    @Override
     public void activarUsuario(Long id) {
         Optional<User> userOptional = userRepository.findById(id);
         if (userOptional.isPresent()) {
             User user = userOptional.get();
-            Estado estadoActivo = estadoRepository.findByDescripcion("Activo");
-            if (estadoActivo != null) {
-                user.setEstado(estadoActivo);
-                userRepository.save(user);
-            }
+            user.setEstado(1L); // Estado activo
+            userRepository.save(user);
         }
     }
 
-
-    // Cambiar a estado inactivo
+    @Override
     public void desactivarUsuario(Long id) {
         Optional<User> userOptional = userRepository.findById(id);
         if (userOptional.isPresent()) {
             User user = userOptional.get();
-            Estado estadoInactivo = estadoRepository.findByDescripcion("Inactivo");
-            if (estadoInactivo != null) {
-                user.setEstado(estadoInactivo);
-                userRepository.save(user);
-            }
+            user.setEstado(2L); // Estado inactivo
+            userRepository.save(user);
         }
     }
-
-
 }

@@ -2,7 +2,7 @@ package com.Skill_Master.Skil.Componentes;
 
 
 import com.Skill_Master.Skil.entities.Estado;
-import com.Skill_Master.Skil.resposiroty.EstadoRepository;
+import com.Skill_Master.Skil.repository.EstadoRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

@@ -18,12 +18,22 @@ public class Ficha {
 
     @Column(nullable = false)
     private String nombreFicha;
+    
+    @Column(nullable = false)
+    private String programa;
 
     @JsonIgnore
     @OneToMany(mappedBy = "ficha")
     private List<User> aprendices;
 
     // Constructor con parametros
+    public Ficha(Long numeroFicha, String nombreFicha, String programa) {
+        this.numeroFicha = numeroFicha;
+        this.nombreFicha = nombreFicha;
+        this.programa = programa;
+    }
+
+    // Constructor con parametros (para compatibilidad)
     public Ficha(Long numeroFicha, String nombreFicha) {
         this.numeroFicha = numeroFicha;
         this.nombreFicha = nombreFicha;
@@ -55,6 +65,14 @@ public class Ficha {
 
     public void setNombreFicha(String nombreFicha) {
         this.nombreFicha = nombreFicha;
+    }
+    
+    public String getPrograma() {
+        return programa;
+    }
+
+    public void setPrograma(String programa) {
+        this.programa = programa;
     }
 
     public List<User> getAprendices() {

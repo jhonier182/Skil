@@ -1,7 +1,7 @@
 package com.Skill_Master.Skil.service.user;
 
 import com.Skill_Master.Skil.entities.Ficha;
-import com.Skill_Master.Skil.resposiroty.FichaRepository;
+import com.Skill_Master.Skil.repository.FichaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
